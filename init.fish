@@ -6,7 +6,7 @@ else
   for path in ~/.autojump/share/autojump/autojump.fish /usr/share/autojump/autojump.fish
     if test -f $path
       set -g autojump_fish $path
-      . $autojump_path
+      source $autojump_path
       break
     end
   end
